@@ -1,8 +1,6 @@
 class Controller {
 
-    constructor(req, res) {
-        this.req = req;
-        this.res = res;
+    constructor() {
         this.page_params = this.defaultPageParams();
     }
 
