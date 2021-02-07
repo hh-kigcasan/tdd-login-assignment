@@ -1,9 +1,16 @@
 const Mysql                 = require('mysql');
-const Model 				= require('./model');
 
-class UserModel extends Model {
-	constructor() {
-		super();
+class UserModel {
+	executeQuery(query) {
+		return new Promise((resolve, reject) => {
+			connection.query(query, function (err, result) {
+				if(err) {
+					reject(err);
+				}else{
+		        	resolve(result);
+		        }
+		    });
+		});		
 	}
 }
 
