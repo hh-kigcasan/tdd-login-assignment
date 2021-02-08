@@ -32,7 +32,7 @@ CREATE TABLE `users` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `users`
+INSERT INTO `users`(name, email, password) VALUES('Anthony Dillahunty', 'testuser@test.com', 'password123');
 --
 
 LOCK TABLES `users` WRITE;
