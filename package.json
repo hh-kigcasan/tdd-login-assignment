@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "mocha --exit || true",
-    "start": "nodemon --inspect=0.0.0.0 app.js"
+    "test": "./node_modules/.bin/mocha src/test/*.test.js",
+    "start": "nodemon --inspect=0.0.0.0 src/app.js"
   },
   "author": "Oliver ",
   "license": "ISC",
