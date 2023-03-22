@@ -3,7 +3,7 @@ services:
     db:
       image: mysql:5.7 # instructs Docker that the db service is going to use a MySQL image version 5.7
       volumes:
-        # db_data is a name we set for the /var/lib/mysql path (We can change db_data to whatever) 
+        # db_data is a name we set for the /var/lib/mysql2 path (We can change db_data to whatever) 
         # that we can then use to share data between two or more services.
         - db_data:/var/lib/mysql2
         # this is a way for us to auto IMPORT a .sql file to the database in your MySQL container
